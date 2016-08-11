@@ -58,9 +58,9 @@ app.controller('list-ctrl', function($scope, shareData) {
         $scope.reset();
         shareData.call('open-modal-add');
     }
-    $scope.removeStudent = function(student) {
+    $scope.removeStudent = function(student, index) {
         $scope.students.splice($scope.students.indexOf(student), 1);
-        $scope.reset();
+        if (index === $scope.el) $scope.reset();
     }
     $scope.editStudent = function () {
         shareData.store('edit-student', $scope.info);

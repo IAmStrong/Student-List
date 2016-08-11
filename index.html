@@ -14,6 +14,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/list.js"></script>
         <script src="scripts/controllers/modal.js"></script>
+        <script src="scripts/directives/batchWatch.js"></script>
         <script src="scripts/directives/executeOnEscInfo.js"></script>
         <script src="scripts/directives/executeOnEscModal.js"></script>
         <script src="scripts/directives/executeOnEnter.js"></script>
@@ -50,8 +51,8 @@
                     </div>
                     <ul class="students">
                         <li ng-repeat="student in students | orderBy:order.option | filter:search" ng-click="showInfo(student); currentElement($index)" ng-class="{active: $index == el}">
-                            <span>{{ fullName(student) }}</span>
-                            <a ng-click="removeStudent(student)">–</a>
+                            <span batch-watch="$index">{{ fullName(student) }}</span>
+                            <a ng-click="removeStudent(student, $index)">–</a>
                         </li>
                     </ul>
                     <input type="text" placeholder="Search for a student..." ng-model="query">

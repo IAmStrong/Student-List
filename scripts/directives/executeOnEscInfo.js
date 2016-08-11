@@ -4,7 +4,7 @@ app.directive('executeOnEscInfo', function($document) {
         link: function(scope) {
             return $document.bind('keydown', function(event) {
                 if (event.which === 27) {
-                    scope.editMode ? false : scope.reset();
+                    if (!scope.editMode) scope.reset();
 
                     return scope.editMode = false;
                 }

@@ -4,7 +4,7 @@ app.directive('executeOnEnter', function($document) {
         link: function(scope) {
             return $document.bind('keydown', function(event) {
                 return scope.$apply(function () {
-                    return event.which === 13 ? scope.getInputValues(scope.mode.action) : false;
+                    if (event.which === 13) scope.getInputValues(scope.mode.action);
                 });
             });
         }
