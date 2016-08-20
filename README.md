@@ -1,5 +1,6 @@
 # Student-List
 Simple web application for managing list of students.
+The project developed during the Web UI courses at SoftServe.
 
 The application allow the user to:
 
