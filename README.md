@@ -1,5 +1,5 @@
 # Student-List
-Simple web application for managing list of students.
+Simple web application for managing list of students done in AngularJS.
 
 The application allow the user to:
 
@@ -8,5 +8,3 @@ The application allow the user to:
 - Edit existing students
 - Delete existing students
 - Order by First Name or Last Name
-
-The project developed during the Web UI courses at SoftServe.
