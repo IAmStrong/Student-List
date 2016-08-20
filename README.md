@@ -1,8 +1,6 @@
 # Student-List
 Simple web application for managing list of students.
 
-The project developed during the Web UI courses at SoftServe.
-
 The application allow the user to:
 
 - Add new students
@@ -10,3 +8,5 @@ The application allow the user to:
 - Edit existing students
 - Delete existing students
 - Order by First Name or Last Name
+
+The project developed during the Web UI courses at SoftServe.
